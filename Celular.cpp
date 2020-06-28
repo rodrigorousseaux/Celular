@@ -12,13 +12,11 @@ void imprimirResultados(float masDiezCaracteres, int cantidadMensajes, int llama
     return;
 }
 
-void bateriaAgotada(int bateria){
+void bateriaAgotada(string mensaje){
 
-    if (bateria < 1){
-      cout << "-------------------" << endl;
-      cout << "SE AGOTO LA BATERIA" << endl;
-      cout << "-------------------" << endl;
-    }
+    cout << "-------------------" << endl;
+    cout << mensaje << endl;
+    cout << "-------------------" << endl;
 
     return;
 }
@@ -128,7 +126,7 @@ void menu(int& valorBateriaActual, float& masDiezCaracteres, float& cantMensajes
            numeroOpcion = opciones(numeroOpcion);
         }
         else{
-           bateriaAgotada(valorBateriaActual);  
+           bateriaAgotada("SE AGOTO LA BATERIA");  
         }  
     }
     
