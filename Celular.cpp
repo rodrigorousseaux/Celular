@@ -108,6 +108,8 @@ int opciones(int numeroOpcion){
 void menu(int& valorBateriaActual, float& masDiezCaracteres, float& cantMensajes, int& llamadaMasLarga){
 
     int numeroOpcion = 0, ultimaLlamada;
+    
+    numeroOpcion = opciones(numeroOpcion);
 
     while(numeroOpcion != 4 && valorBateriaActual >= 1){
 
